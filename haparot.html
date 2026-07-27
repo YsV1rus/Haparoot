@@ -14,7 +14,61 @@
     <nav>
       <div class="wrap nav-in">
         <div class="brand-group">
-          <button class="burger" aria-label="منو">☰</button>
+          <div class="more-wrap" id="moreWrap">
+            <span class="more-ring"></span>
+            <img class="more" id="moreBtn" src="Resources/HaparootMore.png" alt="لوگوی هپروت" onclick="toggleMorePanel()">
+            <div class="more-panel" id="morePanel">
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>خنزر پنزر فروشی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>منوی کافه</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>خوردنی فروشی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>همکاری هپروتی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <a href="#" class="logo">
             <img class="logo-img" src="Resources/Logotype.png" alt="لوگوی هپروت">
           </a>
@@ -156,5 +210,21 @@
       </div>
       <div class="wrap foot-bottom">کلیه حقوق مادی و معنوی این وب‌سایت متعلق به برند هپروت است.</div>
     </footer>
+    <script>
+      function toggleMorePanel(){
+        const wrap = document.getElementById('moreWrap');
+        const panel = document.getElementById('morePanel');
+        wrap.classList.toggle('open');
+        panel.classList.toggle('open');
+      }
+      function toggleSection(el){
+        const section = el.parentElement;
+        const wasExpanded = section.classList.contains('expanded');
+        document.querySelectorAll('.more-section').forEach(s => s.classList.remove('expanded'));
+        if(!wasExpanded){
+          section.classList.add('expanded');
+        }
+      }
+    </script>
   </body>
 </html>
