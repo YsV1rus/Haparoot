@@ -13,13 +13,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;700;900&display=swap" rel="stylesheet">
 
 <style>
+  @font-face {
+  font-family: "Doran";
+  src: url("Resources/Fonts/DoranFaNum-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  }
   :root{
     --green:#478350; --gold:#BF843E; --red:#FF4D3F; --teal:#bf7c3e;
     --ink:#0e0e0e; --paper:#FBF6EC; --stroke:4px;
   }
   *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
   html,body{height:100%; margin:0; overflow:hidden;}
-  body{font-family:"Vazirmatn",system-ui,sans-serif; background:var(--paper); color:var(--ink);}
+  body{font-family:"Doran",system-ui,sans-serif; background:var(--paper); color:var(--ink);}
   .app{height:100vh; height:100dvh; display:flex; flex-direction:column; overflow:hidden;}
 
   /* ---------- TOP BAR (small logo, top-right) ---------- */
