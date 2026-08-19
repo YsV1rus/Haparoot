@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منو | هپروت</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/menu.css">
+  </head>
+  <body>
+  <!-- NAV -->
+    <nav>
+      <div class="wrap nav-in">
+        <div class="brand-group">
+          <div class="more-wrap" id="moreWrap">
+            <span class="more-ring"></span>
+            <img class="more" id="moreBtn" src="Resources/HaparootMore.png" alt="لوگوی هپروت" onclick="toggleMorePanel()">
+            <div class="more-panel" id="morePanel">
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>خنزر پنزر فروشی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>منوی کافه</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>خوردنی فروشی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+              <div class="more-section">
+                <div class="more-section-head" onclick="toggleSection(this)">
+                  <span>همکاری هپروتی</span>
+                  <span class="more-arrow">▾</span>
+                </div>
+                <div class="more-sub">
+                  <a href="#">زیرمجموعه یک</a>
+                  <a href="#">زیرمجموعه دو</a>
+                  <a href="#">زیرمجموعه سه</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <a href="#" class="logo">
+            <img class="logo-img" src="Resources/Logotype.png" alt="لوگوی هپروت">
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="nav-icons">
+            <img class="logo-cup" src="Resources/StickerCup.jpg" alt="لوگوی هپروت">
+            <button class="icon-btn" aria-label="سبد خرید">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="cart-badge">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MENU HERO -->
+    <div class="wrap menu-hero">
+      <div class="small">کافه هپروت</div>
+      <h1>منوی هپروت</h1>
+      <p>همه‌چیز از کافه تا آشپزخونه‌مون، همینجا. بگرد، انتخاب کن، لذت ببر.</p>
+      <div class="legend">
+        <span><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"> گرم</span>
+        <span><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"> سرد</span>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="menu-tabs-wrap">
+      <div class="wrap">
+        <div class="menu-tabs" id="menuTabs">
+          <button class="menu-tab" data-target="menu-food">خوراکی</button>
+          <button class="menu-tab" data-target="menu-drinks">نوشیدنی</button>
+          <button class="menu-tab" data-target="menu-cakes">کیک‌ها</button>
+          <button class="menu-tab" data-target="menu-syrups">سیروپ‌ها</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= خوراکی ================= -->
+    <section class="menu-group" id="menu-food">
+      <div class="wrap">
+        <div class="menu-group-head">
+          <div class="yellow-bar"><h2>خوراکی</h2></div>
+        </div>
+
+        <div class="menu-cats">
+
+          <!-- پاستا -->
+          <div class="menu-cat" id="cat-pasta">
+            <div class="menu-cat-title"><h3>پاستا</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">گوشت و گوجه</span><span class="item-fill"></span><span class="item-price">۴۰۰<small>ت</small></span></div>
+              <div class="item-desc">پنه، سس گوجه، گوشت، قارچ، زیتون، پارمسان</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">مرغ و پستو</span><span class="item-fill"></span><span class="item-price">۳۶۰<small>ت</small></span></div>
+              <div class="item-desc">پنه، سس پستو، قارچ، فیله مرغ، گوجه خشک، پارمسان</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">بیکن چدار</span><span class="item-fill"></span><span class="item-price">۳۵۰<small>ت</small></span></div>
+              <div class="item-desc">پنه، دیپ چدار، بیکن، قارچ، سس ژربرا</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آلفردو</span><span class="item-fill"></span><span class="item-price">۳۶۰<small>ت</small></span></div>
+              <div class="item-desc">پنه، سس آلفردو، قارچ، فیله مرغ، زیتون، پارمسان</div>
+            </div>
+          </div>
+
+          <!-- پنینی -->
+          <div class="menu-cat" id="cat-panini">
+            <div class="menu-cat-title"><h3>پنینی</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">بیکن</span><span class="item-fill"></span><span class="item-price">۲۹۰<small>ت</small></span></div>
+              <div class="item-desc">سس ژربرا، قارچ، بیکن، گودا، پیاز کارامل‌شده، گرانول</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">مرغ و پستو</span><span class="item-fill"></span><span class="item-price">۳۰۰<small>ت</small></span></div>
+              <div class="item-desc">سس پستو، فیله مرغ، گوجه خشک، پارمسان، گرانول</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">گوشت</span><span class="item-fill"></span><span class="item-price">۳۵۰<small>ت</small></span></div>
+              <div class="item-desc">سس گوجه، گوشت، گوجه خشک، زیتون، پارمسان</div>
+            </div>
+          </div>
+
+          <!-- برگر -->
+          <div class="menu-cat" id="cat-burger">
+            <div class="menu-cat-title"><h3>برگر</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کلاسیک</span><span class="item-fill"></span><span class="item-price">۳۱۵<small>ت</small></span></div>
+              <div class="item-desc">سس باربیکیو، گوشت، گوجه خشک، زیتون</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چیز برگر</span><span class="item-fill"></span><span class="item-price">۳۴۰<small>ت</small></span></div>
+              <div class="item-desc">سس باربیکیو، گوشت، دو ورق گودا، پارمسان</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">بیکن برگر</span><span class="item-fill"></span><span class="item-price">۳۶۰<small>ت</small></span></div>
+              <div class="item-desc">سس ژربرا، گوشت، بیکن، پیاز کارامل‌شده</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">دبل برگر</span><span class="item-fill"></span><span class="item-price">۴۰۰<small>ت</small></span></div>
+              <div class="item-desc">سس باربیکیو، گوشت، گوجه خشک، زیتون</div>
+            </div>
+            <div class="menu-item side">
+              <div class="item-row"><span class="item-name">ساید سیب زمینی</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+          </div>
+
+          <!-- سیب زمینی -->
+          <div class="menu-cat" id="cat-potato">
+            <div class="menu-cat-title"><h3>سیب زمینی</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">ساده</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چدار</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چدار و قارچ و بیکن</span><span class="item-fill"></span><span class="item-price">۱۹۸<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پارمسان</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پارمسان و قارچ</span><span class="item-fill"></span><span class="item-price">۱۸۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پارمسان و قارچ و بیکن</span><span class="item-fill"></span><span class="item-price">۱۹۸<small>ت</small></span></div>
+            </div>
+          </div>
+
+          
+
+          <!-- صبحانه -->
+          <div class="menu-cat" id="cat-breakfast">
+            <div class="menu-cat-title"><h3>صبحانه</h3></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نیمرو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۹۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نیمرو سیب زمینی</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نیمرو پیازداغ</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۱۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نیمرو بیکن</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">املت</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۵<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">املت قارچ</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">املت پیازداغ</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نون، پنیر و گردو و ریحون</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"></span><span class="item-price">۱۰۰<small>ت</small></span></div>
+              <div class="item-desc">به همراه چای رایگان</div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= نوشیدنی ================= -->
+    <section class="menu-group" id="menu-drinks">
+      <div class="wrap">
+        <div class="menu-group-head">
+          <div class="yellow-bar"><h2>نوشیدنی</h2></div>
+        </div>
+
+        <div class="menu-cats">
+
+          <!-- بر پایه اسپرسو -->
+          <div class="menu-cat" id="cat-espresso">
+            <div class="menu-cat-title"><h3>بر پایه اسپرسو</h3></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">اسپرسو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۰/۱۱۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آمریکانو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۰/۱۱۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">لاته</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۴۰/۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کاپوچینو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کورتادو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۵<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">اسپرسو ماکیاتو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۲۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">فلت وایت</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آفوگاتو</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"></span><span class="item-price">۱۶۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">ترک</span><span class="item-fill"></span><span class="item-flags"><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></span><span class="item-price">۱۱۰<small>ت</small></span></div>
+            </div>
+          </div>
+
+          <!-- چای بار -->
+          <div class="menu-cat" id="cat-teabar">
+            <div class="menu-cat-title"><h3>چای بار</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چای ترش</span><span class="item-fill"></span><span class="item-price">۹۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">به</span><span class="item-fill"></span><span class="item-price">۹۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">زنجبیل</span><span class="item-fill"></span><span class="item-price">۱۰۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">هل</span><span class="item-fill"></span><span class="item-price">۱۰۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">دارچین</span><span class="item-fill"></span><span class="item-price">۸۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">لیمو عسل</span><span class="item-fill"></span><span class="item-price">۹۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">ایرلندی</span><span class="item-fill"></span><span class="item-price">۱۰۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چای ایرانی</span><span class="item-fill"></span><span class="item-price">۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چای ماسالا</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+          </div>
+
+          <!-- نوشیدنی‌های گرم -->
+          <div class="menu-cat" id="cat-hotdrinks">
+            <div class="menu-cat-title"><h3>نوشیدنی‌های گرم</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">شیر عسل دارچین</span><span class="item-fill"></span><span class="item-price">۱۱۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">ماچا</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">هات چاکلت</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+          </div>
+
+          <!-- دمنوش -->
+          <div class="menu-cat" id="cat-herbal">
+            <div class="menu-cat-title"><h3>دمنوش</h3><img class="flag-icon" src="Resources/FlagHot.png" alt="گرم"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">سرماخوردگی</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+              <div class="item-desc">لیمو، زنجبیل، دارچین، عسل، نعنا، به‌لیمو</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آرامش</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+              <div class="item-desc">گل گاوزبان، دارچین، چای ترش، پنیرک</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">انرژی</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+              <div class="item-desc">به، به‌لیمو، زنجبیل، دارچین</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">رزماری بیبی</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+              <div class="item-desc">رزماری، عسل، هل، گل محمدی</div>
+            </div>
+          </div>
+
+          
+
+          <!-- نوشیدنی‌های سرد -->
+          <div class="menu-cat" id="cat-colddrinks">
+            <div class="menu-cat-title"><h3>نوشیدنی‌های سرد</h3><img class="flag-icon" src="Resources/FlagCold.png" alt="سرد"></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آیس تی</span><span class="item-fill"></span><span class="item-price">۱۲۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">لیموناد</span><span class="item-fill"></span><span class="item-price">۱۳۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">موهیتو</span><span class="item-fill"></span><span class="item-price">۱۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پرتقال رزماری</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+              <div class="item-desc">سیروپ رزماری دست‌ساز، آب پرتقال، لیمو، نعنا، سودا</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">آلوورا رزماری</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+              <div class="item-desc">سیروپ رزماری دست‌ساز، آلوورا، لیمو، ریحان، سودا</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">انبه عمانی</span><span class="item-fill"></span><span class="item-price">۱۵۰<small>ت</small></span></div>
+              <div class="item-desc">سیروپ عمانی دست‌ساز، آب انبه، لیمو، ریحان، سودا</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">انار عمانی</span><span class="item-fill"></span><span class="item-price">۱۷۰<small>ت</small></span></div>
+              <div class="item-desc">سیروپ عمانی دست‌ساز، آب انار، لیمو، نعنا، سودا</div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پروبیوتیک</span><span class="item-fill"></span><span class="item-price">۳۰۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">بداهه</span><span class="item-fill"></span><span class="item-price">۲۰۰<small>ت</small></span></div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= کیک‌ها ================= -->
+    <section class="menu-group" id="menu-cakes">
+      <div class="wrap">
+        <div class="menu-group-head">
+          <div class="yellow-bar"><h2>کیک‌ها</h2></div>
+        </div>
+
+        <div class="menu-cats">
+          <div class="menu-cat" id="cat-cakes" style="grid-column:1/-1;">
+            <div class="menu-cat-title"><h3>کیک و دسر</h3></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">چیز کیک لوتوس</span><span class="item-fill"></span><span class="item-price">۱۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کیک خامه شکلاتی خیس</span><span class="item-fill"></span><span class="item-price">۱۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">پای سیب</span><span class="item-fill"></span><span class="item-price">۶۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کوکی هل دارچین</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کوکی اسپرسو</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">رژیمی</span><span class="item-fill"></span><span class="item-price">۵۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">دسر گل فرانسوی</span><span class="item-fill"></span><span class="item-price">۱۰۵<small>ت</small></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= سیروپ‌ها ================= -->
+    <section class="menu-group" id="menu-syrups">
+      <div class="wrap">
+        <div class="menu-group-head">
+          <div class="yellow-bar"><h2>سیروپ‌ها</h2></div>
+        </div>
+
+        <div class="menu-cats">
+          <div class="menu-cat" id="cat-syrups" style="grid-column:1/-1;">
+            <div class="menu-cat-title"><h3>سیروپ‌ها</h3></div>
+
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">شکلات</span><span class="item-fill"></span><span class="item-price">۲۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">کارامل</span><span class="item-fill"></span><span class="item-price">۲۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">رزماری</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">نارگیل</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">عمانی</span><span class="item-fill"></span><span class="item-price">۴۰<small>ت</small></span></div>
+            </div>
+            <div class="menu-item">
+              <div class="item-row"><span class="item-name">وانیل</span><span class="item-fill"></span><span class="item-price">۲۰<small>ت</small></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrap foot-grid">
+        <div class="foot-brand">
+          <div class="logo">
+            <img class="logo-img" src="Resources/Logotype.png" alt="لوگوی هپروت">
+          </div>
+          <p>کافه، بیکری و کانسپت‌شاپ؛ یه خونه‌ی کوچیک پر از طعم و حال خوب.</p>
+          
+        </div>
+        <div class="foot-col">
+          <h4>دسترسی</h4>
+          <a href="#cafe">کافه</a>
+          <a href="#bakery">بیکری</a>
+          <a href="#shop">کانسپت‌شاپ</a>
+          <a href="#collab">همکاری</a>
+        </div>
+        <div class="foot-col">
+          <h4>ما رو پیدا کن</h4>
+          <span>⏱️ ساعات کاری</span>
+          <span>📍 آدرس اینجا قرار می‌گیره</span>
+          <span>📞 شماره تماس</span>
+          <div class="foot-social">
+            <a href="https://instagram.com/cafe.haparoot/" target="_blank" rel="noopener" aria-label="اینستاگرام">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://t.me/Pouriya_v" target="_blank" rel="noopener" aria-label="تلگرام">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap foot-bottom">کلیه حقوق مادی و معنوی این وب‌سایت متعلق به برند هپروت است.</div>
+    </footer>
+    <script>
+      function toggleMorePanel(){
+        const wrap = document.getElementById('moreWrap');
+        const panel = document.getElementById('morePanel');
+        wrap.classList.toggle('open');
+        panel.classList.toggle('open');
+      }
+      function toggleSection(el){
+        const section = el.parentElement;
+        const wasExpanded = section.classList.contains('expanded');
+        document.querySelectorAll('.more-section').forEach(s => s.classList.remove('expanded'));
+        if(!wasExpanded){
+          section.classList.add('expanded');
+        }
+      }
+
+      /* ===== تب‌های منو: اسکرول نرم + هایلایت خودکار ===== */
+      const menuTabs = document.querySelectorAll('.menu-tab');
+      const menuGroups = document.querySelectorAll('.menu-group');
+
+      menuTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = document.getElementById(tab.dataset.target);
+          if(target){
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        });
+      });
+
+      const spy = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            menuTabs.forEach(t => t.classList.remove('active'));
+            const activeTab = document.querySelector(`.menu-tab[data-target="${entry.target.id}"]`);
+            if(activeTab) activeTab.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-160px 0px -60% 0px', threshold: 0 });
+
+      menuGroups.forEach(g => spy.observe(g));
+    </script>
+  </body>
+</html>

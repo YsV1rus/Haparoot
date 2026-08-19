@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "Doran";
-  src: url("Resources/Fonts/Doran-Regular.otf") format("opentype");
+  src: url("../Resources/Fonts/DoranFaNum-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -18,8 +18,8 @@
     --peach:#FFE7C4;
     --radius:28px;
     --shadow:0 18px 40px -18px rgba(3,10,8,.35);
-    --display:"Lalezar",cursive;
-    --body:"Vazirmatn",sans-serif;
+    --display:"Doran",cursive;
+    --body:"Doran",sans-serif;
   }
 
   *
@@ -76,6 +76,14 @@
   {
     text-decoration:none;
     color:inherit;
+  }
+
+  .test123
+  {
+    background-color: red;
+    width: 80%;
+    margin: 1% auto;
+    aspect-ratio: 2/1;
   }
 
   .wrap
@@ -968,4 +976,5 @@
     .burger{display:flex}
     .float{display:none}
     .foot-grid{flex-direction:column;gap:28px}
+    .test123{width: 98%;}
   }
