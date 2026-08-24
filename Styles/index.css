@@ -78,19 +78,22 @@
     color:inherit;
   }
 
-  .HaparootBanner
-  {
+  .HaparootBanner {
     width: 80%;
+    height: auto;
+    aspect-ratio: 2 / 1;
     margin: 1% auto;
-    aspect-ratio: 2/1;
-  }
+    overflow: hidden;
+}
 
-  .HaparootBanner img
-  {
-    height: 100%;
+.HaparootBanner img {
+    display: block;
     width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-  }
+}
 
   .wrap
   {
