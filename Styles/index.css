@@ -78,12 +78,18 @@
     color:inherit;
   }
 
-  .test123
+  .HaparootBanner
   {
-    background-color: red;
     width: 80%;
     margin: 1% auto;
     aspect-ratio: 2/1;
+  }
+
+  .HaparootBanner img
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 
   .wrap
@@ -976,5 +982,5 @@
     .burger{display:flex}
     .float{display:none}
     .foot-grid{flex-direction:column;gap:28px}
-    .test123{width: 98%;}
+    .HaparootBanner{width: 98%;}
   }
