@@ -83,7 +83,7 @@
     <!-- FEATURES -->
     <div class="feats">
       <div class="wrap feats-in">
-        <div class="feat"><span class="ic">🏠</span> خونگی و تازه‌ی تازه</div>
+        <div class="feat active"><span class="ic">🏠</span> خونگی و تازه‌ی تازه</div>
         <div class="feat"><span class="ic">❤️</span> با عشق درست می‌شه</div>
         <div class="feat"><span class="ic">🎨</span> پر از رنگ و حال خوب</div>
       </div>
@@ -198,6 +198,15 @@
         if(!wasExpanded){
           section.classList.add('expanded');
         }
+      }
+      const feats = document.querySelectorAll('.feats .feat');
+      if (feats.length > 1) {
+        let featIndex = 0;
+        setInterval(() => {
+          feats[featIndex].classList.remove('active');
+          featIndex = (featIndex + 1) % feats.length;
+          feats[featIndex].classList.add('active');
+        }, 2600);
       }
     </script>
   </body>

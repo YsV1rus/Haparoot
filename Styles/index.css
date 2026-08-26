@@ -78,17 +78,22 @@
     color:inherit;
   }
 
-  .HaparootBanner
+  .HaparootBanner 
   {
     width: 80%;
+    height: auto;
+    aspect-ratio: 2 / 1;
     margin: 1% auto;
-    aspect-ratio: 2/1;
+    overflow: hidden;
   }
 
-  .HaparootBanner img
+  .HaparootBanner img 
   {
-    height: 100%;
+    display: block;
     width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
   }
 
@@ -983,4 +988,31 @@
     .float{display:none}
     .foot-grid{flex-direction:column;gap:28px}
     .HaparootBanner{width: 98%;}
+
+    .feats{ padding:22px 0; }
+    .feats-in{
+      position:relative;
+      height:40px;
+      overflow:hidden;
+      display:block;
+    }
+    .feat{
+      position:absolute;
+      top:0;left:0;right:0;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      line-height:1.2;
+      opacity:0;
+      transform:translateY(16px);
+      transition:opacity .5s ease, transform .5s ease;
+      pointer-events:none;
+    }
+    .feat.active{
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
   }
